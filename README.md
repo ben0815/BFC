@@ -7,6 +7,8 @@ This is a personal project while in school.
 
 BF is a very simple esoteric language that consists of eight commands, an instruction pointer, an array of at least 30,000 bytes initialized to zero, and two streams of bytes for input and output.
 
+All characters aside form the eight commands are ignored and will not affect the program.
+
 When a BF program starts the pointer starts at the first block of the array.
 
 #####Below are the eight commands:
