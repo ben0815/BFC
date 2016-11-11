@@ -3,6 +3,8 @@ BFC is a compiler for the esoteric language [BF](https://en.wikipedia.org/wiki/B
 
 This is a personal project while in school.
 
+###BF Overview
+
 BF is a very simple esoteric language that consists of eight commands, an instruction pointer, an array of at least 30,000 bytes initialized to zero, and two streams of bytes for input and output.
 
 When a BF program starts the pointer starts at the first block of the array.
@@ -28,8 +30,13 @@ When a BF program starts the pointer starts at the first block of the array.
 ```
 
 #####Read and Write
-Since the array only stores integer values, when writing a byte with `.` the integer is converted to its ASCII character. These associations can be seen in this [table](http://www.asciitable.com/) in the 'HMTL' column. 
+Since the array only stores integer values, when writing a byte with `.` the integer is converted to its ASCII character. These associations can be seen in this [table](http://www.asciitable.com/) in the 'Html' column. 
 
 For example writing the value 65 will result in an 'A' being printed.
 
 When reading a byte with `,` the character is converted to its ASCII value and stored at the data pointer. Single digit integers are stored as themselves.
+
+#####Example
+This program prints "Hello World!".
+
+`++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.`
