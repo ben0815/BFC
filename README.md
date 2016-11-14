@@ -45,4 +45,4 @@ This program prints "Hello World!".
 
 Here is a gif of it running (you can see the array being updated).
 
-![demo](cCpW0G0 - Imgur.gif)
+![demo](demo.gif)
