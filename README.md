@@ -32,7 +32,7 @@ When a BF program starts the pointer starts at the first block of the array.
 ```
 
 #####Read and Write
-Since the array only stores integer values, when writing a byte with `.` the integer is converted to its ASCII character. These associations can be seen in this [table](http://www.asciitable.com/) in the 'Html' column. 
+Since the array only stores integer values, when writing a byte with `.` the integer is converted to its ASCII character. These associations can be seen in this [table](http://www.asciitable.com/) in the 'Html' column.
 
 For example writing the value 65 will result in an 'A' being printed.
 
