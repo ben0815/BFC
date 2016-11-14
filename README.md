@@ -42,3 +42,7 @@ When reading a byte with `,` the character is converted to its ASCII value and s
 This program prints "Hello World!".
 
 `++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.`
+
+Here is a gif of it running (you can see the array being updated).
+
+![demo](http://imgur.com/cCpW0G0)
