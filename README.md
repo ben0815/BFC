@@ -9,7 +9,7 @@ BF is a very simple esoteric language that consists of eight commands, an instru
 
 All characters aside form the eight commands are ignored and will not affect the program.
 
-When a BF program starts the pointer starts at the first block of the array.
+When a BF program starts the pointer starts at the first cell of the array.
 
 #####Below are the eight commands:
 
