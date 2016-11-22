@@ -1,11 +1,11 @@
-CXX = g++ -std=c++11
-CPPFLAGS = -Werror
+CXX = g++
+CPPFLAGS = -std=c++11 -Werror -Wall -g
 
-SRCS = main.cpp
+SRCS = main.cpp Interpreter.cpp Utility.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
-bfc:
+bfc: main.cpp Interpreter.cpp Utility.cpp
 	$(CXX) $(CPPFLAGS) $(SRCS) -o $@
 
 depend: .depend
