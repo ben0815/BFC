@@ -26,9 +26,9 @@ When a BF program starts the pointer starts at the first cell of the array.
 
 ,       Take one byte of input, store the value at the data pointer
 
-[       If byte at the data pointer is zero jump the data pointer to the command after the matching ']'
+[       If byte at the data pointer is zero jump the instruction pointer to the command after the matching ']'
 
-]       If the byte at the data pointer is nonzero jump the data pointer back to the command after the matching '['
+]       If the byte at the data pointer is nonzero jump the instruction pointer back to the command after the matching '['
 ```
 
 #####Read and Write
