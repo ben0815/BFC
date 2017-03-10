@@ -9,15 +9,15 @@ int
 main(int argc, char** argv) {
   int c = 0;
 
-  // Default array size
+  // Default array size.
   size_t size = 30000;
 
   char* executable = nullptr;
   char* filename = nullptr;
 
-  // If there is more than one argument then we will compile
+  // If there is more than one argument then we will compile.
   if(argc > 1) {
-    // Get command line arguments
+    // Get command line arguments.
     while ((c = getopt(argc, argv, "f:o:s:")) != -1) {
       switch (c) {
         case 'o':
@@ -32,7 +32,7 @@ main(int argc, char** argv) {
         default:
           std::cerr << "Incorrect usage." << std::endl;
 
-          // Make sure a file was provided to compile
+          // Make sure a file was provided to compile.
           if(!filename)
             std::cerr << "Filename must be provided with -f." << std::endl;
 
@@ -41,7 +41,7 @@ main(int argc, char** argv) {
       }
     }
 
-    // Convert the filename to a string and check its extension
+    // Convert the filename to a string and check its extension.
     std::string file(filename);
     if(file.substr(strlen(filename) - 2, 2) != ".b") {
       std::cerr << "This is a BF compiler, files must have the '.b' extension."
@@ -55,9 +55,10 @@ main(int argc, char** argv) {
     std::cout << "Compiling " << file << "..." << std::endl;
 
   }
-  //If there are no arguments go into interpreter mode
+  //If there are no arguments go into interpreter mode.
   else {
     std::cout << "Entering interpreter mode..." << std::endl;
+    std::cout << "To exit type 'quit', 'exit', 'q', or ctrl-c." << std::endl;
 
     Interpreter interpreter(size);
 

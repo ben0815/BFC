@@ -1,28 +1,30 @@
 #ifndef INTERPRETER_HPP_
 #define INTERPRETER_HPP_
 
-#include <memory>
-
 #include "Utility.hpp"
 
 class Interpreter {
 
   public:
 
-    // Construction
+    Interpreter() {}
+
     Interpreter(size_t _size);
 
-    // Destruction
     ~Interpreter() {}
 
-    // Initialize interpreter and continuously take input
+    // Initialize interpreter and continuously take input.
     void Interpret();
 
   private:
 
-    // Pointer to the Utility
-    // This stores the main array and data pointer
-    std::shared_ptr<Utility> m_utility;
+    // Stores the main array and data pointer.
+    Utility m_utility;
+
+    // If set to false, then the array wont be reset on each input line givne to
+    // the interpreter. Essentially, the 'array' will be persistent until the
+    // interpreter is quit.
+    bool m_reset{true};
 };
 
 #endif

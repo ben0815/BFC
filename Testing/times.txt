@@ -1,0 +1,344 @@
+Program: +++++++++++++++++++++++++++++++++++++++++++++++++++++.
+Compile time: 1.1429e-05 seconds.
+
+
+Program: +>++++-.
+Compile time: 3.226e-05 seconds.
+
+
+Program: ---
+Compile time: 8.293e-06 seconds.
+
+
+Program: +++
+Compile time: 1.07e-06 seconds.
+
+
+Program: +++.
+Compile time: 3.4597e-05 seconds.
+
+
+Program: make
+Compile time: 1.575e-06 seconds.
+
+
+Program: +++.
+Compile time: 3.992e-05 seconds.
+
+
+Program: +++.+++.
+Compile time: 3.8782e-05 seconds.
+
+
+Program: ++.>.
+Compile time: 2.2993e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++++++++++++++++
+Compile time: 1.6203e-05 seconds.
+
+
+Program: +++
+Compile time: 3.7082e-05 seconds.
+
+
+Program: +++.
+Compile time: 3.6637e-05 seconds.
+
+
+Program: make
+Compile time: 1.6027e-05 seconds.
+
+
+Program: makeq
+Compile time: 3.135e-05 seconds.
+
+
+Program: make
+Compile time: 4.6742e-05 seconds.
+
+
+Program: +++.
+Compile time: 3.4438e-05 seconds.
+
+
+Program: +++++++++++++.
+Compile time: 1.1045e-05 seconds.
+
+
+Program: make
+Compile time: 3.0643e-05 seconds.
+
+
+Program: +++.
+Compile time: 2.6552e-05 seconds.
+
+
+Program: +++++++++++++++++++++++++++++++++++++.
+Compile time: 1.6915e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++++++.
+Compile time: 1.758e-05 seconds.
+
+
+Program: make
+Compile time: 3.0665e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Compile time: 1.919e-05 seconds.
+
+
+Program: +++++++++++++++++++++++++++++++++++++++++++++++++++
+Compile time: 1.591e-05 seconds.
+
+
+Program: +++++++++
+Compile time: 2.3178e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++++++
+Compile time: 1.5578e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Compile time: 1.9485e-05 seconds.
+
+
+Program: +++++++++++++++++++++++++++++++++++++++++++++++++++.
+Compile time: 2.1395e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++++++++++++++++
+Compile time: 1.6142e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.
+Compile time: 2.0712e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.
+Compile time: 2.2017e-05 seconds.
+
+
+Program: make
+Compile time: 3.2125e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.
+Compile time: 7.2449e-05 seconds.
+
+
+Program: +++++++++++++++++++++++++++++++++.
+Compile time: 2.7208e-05 seconds.
+
+
+Program: +++.
+Compile time: 4.531e-05 seconds.
+
+
+Program: +++++++++++++++++++++++++++++++++.
+Compile time: 1.639e-05 seconds.
+
+
+Program: make
+Compile time: 4.0018e-05 seconds.
+
+
+Program: +.
+Compile time: 4.4672e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++.
+Compile time: 1.787e-05 seconds.
+
+
+Program: make
+Compile time: 3.2577e-05 seconds.
+
+
+Program: +++.
+Compile time: 4.5493e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++++.
+Compile time: 1.8077e-05 seconds.
+
+
+Program: +++.
+Compile time: 4.086e-05 seconds.
+
+
+Program: +++++++++++++++++++++++++++++++++++++++++++++>
+Compile time: 1.672e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++++++++++++++.
+Compile time: 2.1092e-05 seconds.
+
+
+Program: +++++++++++++++++++++++++++++++++++++++++.
+Compile time: 1.8048e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++++++++.
+Compile time: 2.2175e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++++++.
+Compile time: 2.1682e-05 seconds.
+
+
+Program: +++++++++++++++++++++++++++++++++++++++.
+Compile time: 1.894e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++++.
+Compile time: 2.0138e-05 seconds.
+
+
+Program: +++.
+Compile time: 4.27e-05 seconds.
+
+
+Program: make
+Compile time: 1.3347e-05 seconds.
+
+
+Program: +++.
+Compile time: 4.0603e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++++++++++++++++.
+Compile time: 2.156e-05 seconds.
+
+
+Program: ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.
+Compile time: 2.2197e-05 seconds.
+
+
+Program: +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.
+Compile time: 2.2225e-05 seconds.
+
+
+Program: <
+Compile time: 2.3288e-05 seconds.
+
+
+Program: +++.
+Compile time: 4.2863e-05 seconds.
+
+
+Program: <
+Compile time: 4.0915e-05 seconds.
+
+
+Program: <
+Compile time: 4.2557e-05 seconds.
+
+
+Program: <
+Compile time: 2.0815e-05 seconds.
+
+
+Program: <
+Compile time: 4.243e-05 seconds.
+
+
+Program: <
+Compile time: 1.9437e-05 seconds.
+
+
+Program: >
+Compile time: 9.285e-06 seconds.
+
+
+Program: <
+Compile time: 5.7908e-05 seconds.
+
+
+Program: <
+Compile time: 1.9415e-05 seconds.
+
+
+Program: >
+Compile time: 3.1275e-05 seconds.
+
+
+Program: <
+Compile time: 1.9067e-05 seconds.
+
+
+Program: >
+Compile time: 3.7367e-05 seconds.
+
+
+Program: >
+Compile time: 3.1875e-05 seconds.
+
+
+Program: <
+Compile time: 3.7505e-05 seconds.
+
+
+Program: <
+Compile time: 3.7065e-05 seconds.
+
+
+Program: <
+Compile time: 2.0985e-05 seconds.
+
+
+Program: >
+Compile time: 1.298e-05 seconds.
+
+
+Program: <
+Compile time: 5.7128e-05 seconds.
+
+
+Program: >>>
+Compile time: 1.2295e-05 seconds.
+
+
+Program: >>><
+Compile time: 3.7237e-05 seconds.
+
+
+Program: ><
+Compile time: 6.3947e-05 seconds.
+
+
+Program: <
+Compile time: 1.797e-05 seconds.
+
+
+Program: <
+Compile time: 1.9435e-05 seconds.
+
+
+Program: ><
+Compile time: 3.1198e-05 seconds.
+
+
+Program: >><<
+Compile time: 1.425e-05 seconds.
+
+
+Program: >><<<
+Compile time: 1.9658e-05 seconds.
+
+
+Program: <
+Compile time: 1.9343e-05 seconds.
+
+
+Program: +++
+Compile time: 2.2633e-05 seconds.
+
+
+Program: +++++++.
+Compile time: 4.163e-05 seconds.
+
+

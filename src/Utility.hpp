@@ -3,34 +3,36 @@
 
 #include <iostream>
 #include <vector>
+#include <chrono>
+#include <fstream>
+#include <sstream>
+
+typedef std::vector<int>::iterator VIT;
 
 class Utility {
 
   public:
 
-    // Construction
-    Utility(size_t _size) {
-      m_array = std::vector<int>(_size);
-      m_pointer = &m_array[0];
-    }
+    Utility() {}
 
-    // Destruction
+    Utility(size_t _size);
+
     ~Utility() {}
 
-    // Compile a given program string
-    std::string Compile(std::string _program);
+    // Compile a given program string.
+    void Compile(std::string _program);
 
-    // Getters and setters
-    std::vector<int>& GetArray() { return m_array; }
-
-    int* GetPointer() { return m_pointer; }
+    void Reset();
 
   private:
 
-    // Main array that stores the program's values
+    size_t m_size{30000};
+
+    // Main array that stores the program's values.
     std::vector<int> m_array;
 
-    int* m_pointer;
+    // Pointer which moves along the array.
+    VIT m_pointer{m_array.begin()};
 };
 
 #endif

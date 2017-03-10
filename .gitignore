@@ -1,6 +1,10 @@
 # Compiled Object files
 *.o
 
+# Dependencies
+*.d
+Dependencies
+
 # Compiled Dynamic libraries
 *.so
 *.dylib
@@ -16,6 +20,9 @@
 *.exe
 *.out
 *.app
+
+# Mac stuff
+*.dsYM
 
 # Executable
 bfc

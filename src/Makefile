@@ -1,18 +1,56 @@
-CXX = g++
-CPPFLAGS = -std=c++11 -Werror -Wall -g
+# Configuration Options ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
-SRCS = main.cpp Interpreter.cpp Utility.cpp
+# Set debug mode.
+debug ?= 0
 
-OBJS = $(SRCS:.cpp=.o)
+# Directory Layout ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
-bfc: main.cpp Interpreter.cpp Utility.cpp
-	$(CXX) $(CPPFLAGS) $(SRCS) -o $@
+SRC_DIR ?= .
 
-depend: .depend
+# Compiler Configuration ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
-.depend: $(SRCS)
-	rm -rf ./.depend
-	$(CXX) $(CPPFLAGS) -MM $^>>./.depend;
+CXX 	 = g++
+CXXFLAGS = -std=c++11 -Wall -Werror -pedantic
 
+ifeq ($(debug), 1)
+	CXXFLAGS += -g
+endif
+
+DEPS = -MMD -MF $*.d
+
+# File Configuration ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+SRCS := $(shell find . -path "*.cpp")
+OBJS := $(SRCS:.cpp=.o)
+
+# Executable Recipes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+
+# Build the executable.
+bfc: $(OBJS)
+	@echo Linking $@...
+	@$(CXX) $(CXXFLAGS) $(OBJS) -o $@
+	@rm -f *.o
+
+# Object File Recipes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+.cpp.o: $(SRCS)
+	@echo Compiling $<...
+	@$(CXX) -c $(CXXFLAGS) $(DEPS) $(INC_DIRS) $< -o $@
+	@cat $*.d >> Dependencies
+
+# Cleanup ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+.PHONY: clean
 clean:
-	rm *.o bfc
+	@echo Cleaning game and executables...
+	@rm -f $(OBJS) game
+	@rm $(shell find . -path "*.d")
+	@rm Dependencies
+
+# Other Stuff ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+# include automatically generated dependencies
+-include Dependencies
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#

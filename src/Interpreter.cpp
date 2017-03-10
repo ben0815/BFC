@@ -2,21 +2,14 @@
 
 Interpreter::
 Interpreter(size_t _size) {
-  // Initialize utility
-  m_utility = std::make_shared<Utility>(Utility(_size));
+  m_utility = Utility(_size);
 }
 
 
 void
 Interpreter::
 Interpret() {
-  // TODO:
-  //       Continuously read from standard input
-  //       Perform operation depending on command
-  //       Prompt for input if necessary
-  //       Send output if necessary
-  //       Do not crash if bad input is given
-
+  // Continuously read from standard input and compile/run each line.
   for(;;) {
     std::cout << "> ";
 
@@ -30,9 +23,11 @@ Interpret() {
       return;
     }
 
-    std::string output = m_utility->Compile(program);
+    m_utility.Compile(program);
 
-    std::cout << output << std::endl;
+    // If reset mode is on reset the array after each input line.
+    if(m_reset)
+      m_utility.Reset();
   }
 
   return;
