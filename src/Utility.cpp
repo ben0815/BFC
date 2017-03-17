@@ -16,7 +16,7 @@ Compile(std::string _program) {
   auto t1 = std::chrono::high_resolution_clock::now();
 
   // Loop through program and switch for the possible commands.
-  for(auto cit = _program.cbegin(); cit != _program.cend(); ++cit) {
+  for(auto cit = _program.begin(); cit != _program.end(); ++cit) {
     if(*cit == '+')
       ++*m_pointer;
     else if(*cit == '-')
@@ -39,8 +39,6 @@ Compile(std::string _program) {
         std::cout << *m_pointer;
       else
         std::cout << static_cast<char>(*m_pointer);
-
-      std::cout << " ";
     }
     else if(*cit == ',') {
       std::cout << "Input: ";
@@ -48,9 +46,7 @@ Compile(std::string _program) {
     }
     // TODO: Currently doesn't handle nested loops
     else if(*cit == '[') {
-      std::cout << "left";
-      if(*m_pointer == 0)
-        std::cout << "yes";
+      if(*m_pointer == 0) {
         while(*cit != ']') {
           if(cit == _program.cend()) {
             std::cerr << "Missing \']\'." << std::endl;
@@ -59,18 +55,21 @@ Compile(std::string _program) {
           }
 
           ++cit;
-          //std::cout << *cit;
         }
-
-      ++cit;
+      }
     }
     else if(*cit == ']') {
-    std::cout << "what22";
-      if(*m_pointer != 0)
-        while(*cit != '[')
-          --cit;
+      if(*m_pointer != 0) {
+        while(*cit != '[') {
+          if(cit == _program.cbegin()) {
+            std::cerr << "Missing \'[\'." << std::endl;
 
-      --cit;
+            return;
+          }
+
+          --cit;
+        }
+      }
     }
   }
 
