@@ -35,10 +35,7 @@ Compile(std::string _program) {
         --m_pointer;
     }
     else if(*cit == '.') {
-      if(*m_pointer < 32)
-        std::cout << *m_pointer;
-      else
-        std::cout << static_cast<char>(*m_pointer);
+      std::cout << static_cast<char>(*m_pointer);
     }
     else if(*cit == ',') {
       std::cout << "Input: ";
@@ -47,7 +44,9 @@ Compile(std::string _program) {
     // TODO: Currently doesn't handle nested loops
     else if(*cit == '[') {
       if(*m_pointer == 0) {
-        while(*cit != ']') {
+        size_t count = 1;
+
+        while(count > 0) {
           if(cit == _program.cend()) {
             std::cerr << "Missing \']\'." << std::endl;
 
@@ -55,12 +54,19 @@ Compile(std::string _program) {
           }
 
           ++cit;
+
+          if(*cit == '[')
+            ++count;
+          else if(*cit == ']')
+            --count;
         }
       }
     }
     else if(*cit == ']') {
       if(*m_pointer != 0) {
-        while(*cit != '[') {
+        size_t count = 1;
+
+        while(count > 0) {
           if(cit == _program.cbegin()) {
             std::cerr << "Missing \'[\'." << std::endl;
 
@@ -68,11 +74,15 @@ Compile(std::string _program) {
           }
 
           --cit;
+
+          if(*cit == '[')
+            --count;
+          else if(*cit == ']')
+            ++count;
         }
       }
     }
   }
-
   std::cout << std::endl;
 
   // Compute and output timing.
