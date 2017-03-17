@@ -22,15 +22,21 @@ Compile(std::string _program) {
     else if(*cit == '-')
       --*m_pointer;
     else if(*cit == '>' ) {
-      if(m_pointer == m_array.end())
+      if(m_pointer == m_array.end()) {
         std::cerr << "Cannot increment pointer past end of array." << std::endl;
+
+        return;
+      }
       else
         ++m_pointer;
     }
     else if(*cit == '<') {
-      if(m_pointer == m_array.begin())
+      if(m_pointer == m_array.begin()) {
         std::cerr << "Cannot decrement pointer before beginning of array."
           << std::endl;
+
+          return;
+      }
       else
         --m_pointer;
     }

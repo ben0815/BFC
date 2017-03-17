@@ -15,7 +15,12 @@ Interpret() {
 
     std::string program = "";
 
-    std::getline(std::cin, program);
+    //std::getline(std::cin, program);
+
+    char c;
+    while(std::cin >> c) {
+      program+=c;
+    }
 
     if(program == "quit" || program == "exit" || program == "q") {
       std::cout << "Leaving interpreter mode." << std::endl;

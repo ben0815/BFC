@@ -1,6 +1,8 @@
 #ifndef INTERPRETER_HPP_
 #define INTERPRETER_HPP_
 
+#include <string>
+
 #include "Utility.hpp"
 
 class Interpreter {
@@ -20,6 +22,8 @@ class Interpreter {
 
     // Stores the main array and data pointer.
     Utility m_utility;
+
+    std::vector<std::string> m_cache;
 
     // If set to false, then the array wont be reset on each input line givne to
     // the interpreter. Essentially, the 'array' will be persistent until the
