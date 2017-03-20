@@ -47,7 +47,6 @@ Compile(std::string _program) {
       std::cout << "Input: ";
       std::cin >> *m_pointer;
     }
-    
     else if(*cit == '[') {
       if(*m_pointer == 0) {
         size_t count = 1;
