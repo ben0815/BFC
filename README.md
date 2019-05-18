@@ -1,11 +1,9 @@
 # BFC
-BFC is a compiler for the esoteric language [BF](https://en.wikipedia.org/wiki/Brainfuck).
-
-This is a personal project while in school.
+BFC is an interpreter for the esoteric language [BF](https://en.wikipedia.org/wiki/Brainfuck).
 
 ### BF Overview
 
-BF is a very simple esoteric language that consists of eight commands, an instruction pointer, an array of at least 30,000 bytes initialized to zero, and two streams of bytes for input and output.
+BF is a simple esoteric language that consists of eight commands, an instruction pointer, an array of at least 30,000 bytes initialized to zero, and two streams of bytes for input and output.
 
 All characters aside form the eight commands are ignored and will not affect the program.
 
